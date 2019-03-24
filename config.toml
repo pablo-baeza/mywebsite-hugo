@@ -1,0 +1,113 @@
+baseURL = "https://pablo-baeza.github.io"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+title = "i'm pablo"
+theme = "hermit"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "yourdiscussshortname"
+
+
+
+[author]
+  name = "pablo baeza"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
+
+  homeSubtitle = "systems biology PhD candidate"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # bgImg = ""  # Homepage background-image URL
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/username/repository/commit/"
+
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
+
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/pablo_bz_"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/pablobaezacenturion/"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/pablo-baeza"
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:pablo.baeza@crg.eu"
+
+[menu]
+
+  [[menu.main]]
+    name = "about"
+    url = "about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "research"
+    url = "research/"
+    weight = 2
+
+  [[menu.main]]
+    name = "cv"
+    url = "cv/"
+    weight = 3
+
+
+[languages]
+  [languages.en]
+    languageName = "english"
+    weight = 1
+  [languages.es]
+    title = "soy pablo"
+    languageName = "español"
+    weight = 2
+    [languages.es.params]
+      homeSubtitle = "estoy haciendo un doctorado en biología de sistemas"
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        name = "acerca de"
+        url = "about/"
+        weight = 1
+    [[languages.es.menu.main]]
+        name = "investigación"
+        url = "research/"
+        weight = 2
+    [[languages.es.menu.main]]
+        name = "cv"
+        url = "cv/"
+        weight = 3
